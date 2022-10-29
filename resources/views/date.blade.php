@@ -9,11 +9,19 @@
 <body>
 
 <header>
-<nuv>Atte</nuv>
+<nav>
+    <h1>Atte</h1>
+    <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">日付一覧</a></li>
+        <li><a href="#">ログアウト</a></li>
+    </ul>
+</nav>
 </header>
 
 <h1>2021-11-01</h1>
 
+<form>
 <table cellpadding="30">
 <tr>
 <td><input type="text" name="text1" value="名前"></td>
@@ -32,10 +40,11 @@
 </tr>
 
 <tr>
-<td><input type="image" ser="register.png" name="image" value="会員登録"></td>
+<td><input type="submit" ser="" name="image" value="会員登録"></td>
 </tr>
     
 </table>
+</form>
 
 <footer>Atte,icn.</footer>
     

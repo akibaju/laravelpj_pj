@@ -9,31 +9,28 @@
 <body>
 
 <header>
-<nuv>Atte</nuv>
+<nav>
+    <h1>Atte</h1>
+</nav>
 </header>
 
 <h1>ログイン</h1>
 
 <table cellpadding="30">
 <tr>
-<td><input type="mailaddress" name="mailaddress1" value="メールアドレス"></td>
+<td><input type="email" name="email1" value="メールアドレス"></td>
 </tr>
 
 <tr>
 <td><input type="password" name="password1" value="パスワード"></td>
 </tr>
 
-</table>
-
-<div id="login-page">
-<a id="login-button" 
-        href="javascript:performログイン()">
-</div>
-
 <tr>
 <td><input type="image" ser="login.png" name="image" value="ログイン"></td>
 </tr>
 
+</table>
+</form>
 
 <p>アカウントをお持ちでない方はこちらから</p>
 <p>会員登録</p>

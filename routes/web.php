@@ -30,6 +30,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/register', [UserController::class,'index']);
 Route::post('/register', [UserController::class,'store']);
+Route::post('/register', [AuthorController::class, 'create']);
 Route::get('/login', [LoginController::class,'index']);
 Route::post('/login', [LoginController::class,'login']);
 Route::get('/logout', [LoginController::class,'logout']);
@@ -38,5 +39,6 @@ Route::get('/work_finished', [WorkedController::class,'finish']);
 Route::get('/breaktime_started', [BreaktimeController::class,'start']);
 Route::post('/breaktime_finished', [BreaktimeController::class,'finish']);
 Route::get('/list_display', [ListDisplayController::class,'index']);
+
 Route::get('/auth', [AuthorController::class,'check']);
 Route::post('/auth', [AuthorController::class,'checkUser']);

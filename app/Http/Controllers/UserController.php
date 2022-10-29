@@ -11,9 +11,11 @@ class UserController extends Controller
         // $users = User::all();
         return view('register');
     }
-    public function store()
+    public function store(Request $request)
     {
         // $users = User::all();
+        $fors = $request->all();
+        User::create($fors);
         return view('register');
     }
 }

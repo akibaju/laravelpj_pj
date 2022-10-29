@@ -11,9 +11,11 @@ class LoginController extends Controller
         // $logins = Login::all();
         return view('login');
     }
-    public function login()
+    public function login(Request $request)
     {
         // $logins = Login::all();
+        $fors = $request->all();
+        User::create($fors);
         return view('login');
     }
     public function logout()
