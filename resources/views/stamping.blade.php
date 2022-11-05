@@ -21,12 +21,13 @@
 
 <h1>福場凛太郎さんお疲れ様です！</h1>
 
-<form>
+<form action="/work_finished" method="post">
+    @csrf
 <table cellpadding="30">
 <tr>
 <td><input type="submit" name="work_started" value="勤務開始"></td>
 </tr>
-    
+
 <tr>
 <td><input type="submit" name="work_finished" value="勤務終了"></td>
 </tr>

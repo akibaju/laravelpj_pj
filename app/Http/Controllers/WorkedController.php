@@ -11,9 +11,12 @@ class WorkedController extends Controller
         // $workeds = Worked::all();
         return view('work_started');
     }
-    public function finish()
+    public function finish(Request $request)
     {
         // $workeds = Worked::all();
+        //ddd($request);
+        $fors = $request->all();
+        User::create($fors);
         return view('work_finished');
     }
 }

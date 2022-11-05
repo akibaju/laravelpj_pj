@@ -16,10 +16,11 @@
 
 <h1>会員登録</h1>
 
-<form>
+<form action="/register" method="post">
+    @csrf
 <table cellpadding="30">
 <tr>
-<td><input type="text" name="text1" value="名前"></td>
+<td><input type="text" name="name" value="名前"></td>
 </tr>
 
 <tr>
@@ -31,11 +32,11 @@
 </tr>
     
 <tr>
-<td><input type="password" name="conformed_password1" value="確認用パスワード"></td>
+<td><input type="password" name="password_for_confirmation" value="確認用パスワード"></td>
 </tr>
 
 <tr>
-<td><input type="submit" ser="" name="register" value="会員登録"></td>
+<td><input type="submit" name="register" value="会員登録"></td>
 </tr>
     
 </table>

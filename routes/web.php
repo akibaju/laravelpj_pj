@@ -30,7 +30,6 @@ Route::get('/dashboard', function () {
 
 Route::get('/register', [UserController::class,'index']);
 Route::post('/register', [UserController::class,'store']);
-Route::post('/register', [AuthorController::class, 'create']);
 Route::get('/login', [LoginController::class,'index']);
 Route::post('/login', [LoginController::class,'login']);
 Route::get('/logout', [LoginController::class,'logout']);

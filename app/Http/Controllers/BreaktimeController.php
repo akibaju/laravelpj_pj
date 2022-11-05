@@ -11,9 +11,12 @@ class BreaktimeController extends Controller
         // $breaktimes = Breaktime::all();
         return view('breaktime_started');
     }
-    public function finish()
+    public function finish(Request $request)
     {
         // $breaktimes = Breaktime::all();
+        //ddd($request);
+        $fors = $request->all();
+        User::create($fors);
         return view('breaktime_finished');
     }
 }

@@ -16,6 +16,8 @@
 
 <h1>ログイン</h1>
 
+<form action="/login" method="post">
+    @csrf
 <table cellpadding="30">
 <tr>
 <td><input type="email" name="email1" value="メールアドレス"></td>
@@ -26,7 +28,7 @@
 </tr>
 
 <tr>
-<td><input type="image" ser="login.png" name="image" value="ログイン"></td>
+<td><input type="submit" name="login" value="ログイン"></td>
 </tr>
 
 </table>
