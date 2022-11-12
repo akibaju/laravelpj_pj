@@ -21,7 +21,8 @@
 
 <h1>2021-11-01</h1>
 
-<form>
+<form action="/" method="post">
+    @csrf
 <table cellpadding="30">
 <tr>
 <td><input type="text" name="text1" value="名前"></td>

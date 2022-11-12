@@ -24,11 +24,11 @@
 </tr>
 
 <tr>
-<td><input type="email" name="email1" value="メールアドレス"></td>
+<td><input type="email" name="email" value="メールアドレス"></td>
 </tr>
     
 <tr>
-<td><input type="password" name="password1" value="パスワード"></td>
+<td><input type="password" name="password" value="パスワード"></td>
 </tr>
     
 <tr>
